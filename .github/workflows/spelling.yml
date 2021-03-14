@@ -15,6 +15,6 @@ jobs:
       - name: spelling
         uses: briandfoy/check-spelling@0.0.17-bdf
         env:
-          STEPS_CONTEXT: ${{ toJSON(steps) }}
+          STEPS_CONTEXT: ${{ toJSON(inputs) }}
         with:
           debug: 1
