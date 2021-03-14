@@ -14,5 +14,3 @@ jobs:
         uses: briandfoy/check-spelling@0.0.17-bdf
         with:
           debug: 1
-          files: some/path
-
