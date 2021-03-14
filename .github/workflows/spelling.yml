@@ -12,7 +12,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2.0.0
       - name: spelling
-        uses: briandfoy/check-spelling@0.0.17-alpha
+        uses: briandfoy/check-spelling@0.0.17-bdf
       - uses: ./
         with:
           bucket: .github/actions
