@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - "**"
-
 jobs:
   build:
     name: Spell checker
@@ -13,9 +12,3 @@ jobs:
         uses: actions/checkout@v2.0.0
       - name: spelling
         uses: briandfoy/check-spelling@0.0.17-bdf
-      - uses: ./
-        with:
-          bucket: .github/actions
-          project: spelling
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
